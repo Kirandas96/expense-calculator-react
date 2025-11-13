@@ -16,7 +16,15 @@ const app = express();
 app.set('etag', false);
 
 // Middleware
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: true, // Allow all origins (including mobile)
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  exposedHeaders: ['Authorization'],
+  maxAge: 86400 // 24 hours
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
