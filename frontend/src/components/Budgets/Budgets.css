@@ -92,3 +92,88 @@
   gap: 8px;
 }
 
+/* Tablet styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .budget-form-card,
+  .budgets-list-card {
+    padding: 24px;
+  }
+}
+
+/* Mobile and Tablet styles */
+@media (max-width: 768px) {
+  .budget-form-card,
+  .budgets-list-card {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .budget-form-card h3,
+  .budgets-list-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+
+  .budget-item {
+    padding: 20px;
+  }
+
+  .budget-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .budget-item-details {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .budget-item-actions {
+    width: 100%;
+  }
+
+  .budget-item-actions .btn {
+    flex: 1;
+    max-width: 150px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .budget-form-card,
+  .budgets-list-card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .budget-form-card h3,
+  .budgets-list-card h3 {
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+
+  .budget-item {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .budget-item-title {
+    font-size: 1rem;
+  }
+
+  .budget-item-amount {
+    font-size: 1.1rem;
+  }
+
+  .budget-item-details {
+    font-size: 0.85rem;
+  }
+
+  .budget-item-actions .btn {
+    max-width: 120px;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+}
+

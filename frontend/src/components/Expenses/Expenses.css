@@ -100,20 +100,113 @@
   gap: 8px;
 }
 
+/* Tablet styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .expense-form-card,
+  .expenses-list-card {
+    padding: 24px;
+  }
+
+  .list-filters {
+    gap: 12px;
+  }
+}
+
+/* Mobile and Tablet styles */
 @media (max-width: 768px) {
+  .expense-form-card,
+  .expenses-list-card {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .expense-form-card h3,
+  .expenses-list-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+
+  .list-filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .list-filters select,
+  .list-filters input {
+    width: 100%;
+    min-width: unset;
+  }
+
   .expense-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+    padding: 16px 20px;
   }
 
   .expense-item-amount {
     margin-right: 0;
+    font-size: 1.2rem;
   }
 
   .expense-item-actions {
     width: 100%;
     justify-content: flex-end;
+  }
+
+  .expense-item-actions .btn {
+    flex: 1;
+    max-width: 120px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .expense-form-card,
+  .expenses-list-card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .expense-form-card h3,
+  .expenses-list-card h3 {
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+
+  .list-filters select,
+  .list-filters input {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    min-height: 44px;
+  }
+
+  .expense-item {
+    padding: 14px 16px;
+    border-radius: 12px;
+  }
+
+  .expense-item-description {
+    font-size: 0.95rem;
+  }
+
+  .expense-item-meta {
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+
+  .expense-item-amount {
+    font-size: 1.1rem;
+  }
+
+  .expense-item-actions {
+    gap: 6px;
+  }
+
+  .expense-item-actions .btn {
+    max-width: 100px;
+    font-size: 0.85rem;
+    padding: 8px 12px;
   }
 }
 

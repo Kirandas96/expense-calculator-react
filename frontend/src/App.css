@@ -116,6 +116,19 @@
 }
 
 /* Responsive */
+/* Tablet styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .card {
+    padding: 24px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px 14px;
+  }
+}
+
+/* Mobile and Tablet styles */
 @media (max-width: 768px) {
   .btn {
     width: 100%;
@@ -123,6 +136,46 @@
 
   .form-actions {
     flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    min-height: 44px;
+  }
+
+  .btn-sm {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    min-height: 36px;
+  }
+
+  .card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    min-height: 44px;
   }
 }
 

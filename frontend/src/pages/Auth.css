@@ -66,13 +66,40 @@
   text-decoration: underline;
 }
 
-@media (max-width: 480px) {
+/* Tablet styles */
+@media (max-width: 768px) and (min-width: 481px) {
   .auth-card {
-    padding: 30px 20px;
+    padding: 35px 30px;
+    max-width: 400px;
   }
 
   .auth-header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 15px;
+  }
+
+  .auth-card {
+    padding: 25px 18px;
+    border-radius: 20px;
+  }
+
+  .auth-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .auth-header p {
+    font-size: 0.9rem;
+  }
+
+  .error-message {
+    padding: 10px 14px;
+    font-size: 0.85rem;
   }
 }
 

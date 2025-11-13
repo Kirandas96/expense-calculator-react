@@ -165,28 +165,150 @@
   font-style: italic;
 }
 
+/* Tablet styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .chart-wrapper {
+    height: 350px;
+  }
+}
+
+/* Mobile and Tablet styles */
 @media (max-width: 768px) {
   .summary-cards {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .section-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
   }
 
   .date-filter {
     width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .date-filter label {
+    font-size: 0.9rem;
   }
 
   .date-filter input,
   .date-filter button {
     flex: 1;
     min-width: 120px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .chart-container {
+    padding: 20px;
+    margin-bottom: 20px;
   }
 
   .chart-wrapper {
     height: 300px;
+    margin-top: 15px;
+  }
+
+  .category-breakdown {
+    padding: 20px;
+  }
+
+  .category-breakdown h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .category-item {
+    padding: 14px 16px;
+  }
+
+  .card .amount {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .summary-cards {
+    gap: 12px;
+  }
+
+  .section-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .date-filter {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .date-filter label {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .date-filter input {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .date-filter button {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .chart-container {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .chart-wrapper {
+    height: 250px;
+    margin-top: 10px;
+  }
+
+  .category-breakdown {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .category-breakdown h3 {
+    font-size: 1rem;
+  }
+
+  .category-item {
+    padding: 12px 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .category-item-amount {
+    width: 100%;
+    text-align: right;
+  }
+
+  .card .amount {
+    font-size: 1.6rem;
+  }
+
+  .card h3 {
+    font-size: 0.85rem;
   }
 }
 
